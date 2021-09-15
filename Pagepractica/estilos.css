@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk' , sans-serif;
+}
+p{
+    font-weight: 400;
+    color: #111;
+}
+.sectionPage{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/bg.jpg) rgba(0, 0, 0, 1);
+    background-size: cover;
+}
+.sectionPage .contenido{
+    max-width: 900px;
+    text-align: center;
+}
+.sectionPage .contenido h2{
+    font-size: 5em;
+    color: #172f42;
+}
+.sectionPage .contenido p{
+    font-size: 1em;
+    color: #000;
+    margin-bottom: 10px;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #5394ca;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+.btn:hover{
+    letter-spacing: 6px;
+    color: #ff2e74;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header .logo{
+    color: #5394ca;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span{
+    color: #ff0157;
+}
+header .nav{
+    position: relative;
+    display: flex;
+}
+header .nav li{
+    list-style: none;
+    margin-left: 50px;
+}
+header .nav li a{
+    text-decoration: none;
+    color: #002d52;
+
+}
+header .nav li a:hover{
+    color: #ff0157;
+}
