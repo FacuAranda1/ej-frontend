@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloading</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body onload="funcionpreload()">
+    <div id="preload">
+        <span class="punto"></span>
+        <div class="puntos">
+            <span class="punto-preload"></span>
+            <span class="punto-preload"></span>
+            <span class="punto-preload"></span>
+        </div>
+        <div class="texto-preload">
+            <h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CARGANDO</h3>
+        </div>
+    </div>
+    <div style="display:none; text-align: center;" id="myDiv" class="animate-body">
+        <h2 class="h2-welcome">¡Bienvenido!</h2>
+        <p class="p-welcome">Aca iria nuestra pagina web</p>
+    </div>
+
+    <script>
+        var mivariable;
+
+        function funcionpreload(){
+            mivariable = setTimeout(showPage, 3000)
+        }
+
+        function showPage(){
+            document.getElementById("preload").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+</body>
+</html>

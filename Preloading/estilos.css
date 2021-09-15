@@ -1,0 +1,87 @@
+#preload{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 142px;
+    height: 40px;
+    margin: -20px 0 0 -71px;
+    background: #fff;
+    filter: contrast(20);
+}
+#preload .punto{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    border-radius: 50%;
+    filter: blur(4px);
+    background: #000;
+    transform: translateX(0);
+    animation: punto 2.8s infinite;
+}
+#preload .puntos{
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: puntos 2.8s infinite;
+}
+#preload .puntos span{
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+}
+#preload .texto-preload{
+    text-align: center;
+    padding-top: 4px;
+    letter-spacing: 3px;
+    /* font-size: 12px; */
+    font-weight: 500;
+}
+
+@keyframes punto {
+    50%{
+        transform: translateX(96px);
+    }
+}
+@keyframes puntos {
+    50%{
+        transform: translateX(-31px);
+    }
+}
+
+.animate-body{
+    position: relative;
+    -webkit-animation-name: animatebody;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebody;
+  animation-duration: 1s  
+}
+
+@-webkit-keyframes animatebody {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebody { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+
+
+.h2-welcome{
+     color: #000;
+     font-size: 30px;
+     font-weight: bolder;
+     letter-spacing: 2px;
+}
+
+.p-welcome{
+    color: #000;
+    font-size: 18px;
+}
