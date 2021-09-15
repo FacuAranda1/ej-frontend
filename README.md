@@ -1,1 +1,1 @@
-# ej-frontend
+# ejercicios-frontend
